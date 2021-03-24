@@ -15,9 +15,14 @@ const csvUrl =
 fetchData(csvUrl).then((text) => {
   const data = d3.csvParse(text);
   console.log(data);
-
-  const deaths = data.columns[2];
-  const rows = data.length;
-  console.log(rows);
+  const date = data[0]["date"];
+  console.log(date);
+  const deaths = data[0]["deaths"];
   console.log(deaths);
+  const confirmedCases = data[0]["confirmed_cases"];
+  console.log(confirmedCases);
+  const newCases = data[0]["new_confirmed_cases"];
+  console.log(newCases);
+  const newDeaths = data[0]["new_deaths"];
+  console.log(newDeaths);
 });
