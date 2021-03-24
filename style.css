@@ -32,3 +32,28 @@ h1 {
   justify-content: center;
   padding: 0.8rem 0.66rem;
 }
+
+.box {
+  margin: 0 auto;
+  padding: 20px 2px;
+  background: #f7f5f5;
+  border-radius: 10px;
+}
+
+.big-numbers {
+  max-width: 630px;
+  margin: 30px auto;
+  display: flex;
+  background-color: none;
+  border-radius: 10px;
+}
+
+.triptych {
+  max-width: 800px;
+}
+
+.graphic-container,
+.graphic-section--chart {
+  max-width: 630px;
+  margin: 0 auto;
+}
