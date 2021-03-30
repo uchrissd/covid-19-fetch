@@ -18,24 +18,32 @@ fetchData(csvUrl).then((text) => {
   const data = d3.csvParse(text);
   console.log(data);
 
-  const date = data[0]["date"];
+  let date = data[0]["date"];
   console.log(date);
-  const deaths = data[0]["deaths"];
+  let deaths = data[0]["deaths"];
   console.log(deaths);
   document.getElementById("deaths").innerHTML = deaths;
-  const confirmedCases = data[0]["confirmed_cases"];
+  document.getElementById("confirmed-cases").innerHTML = deaths;
+  let confirmedCases = data[0]["confirmed_cases"];
   console.log(confirmedCases);
   document.getElementById("confirmed-cases").innerHTML = confirmedCases;
-  const newCases = data[0]["new_confirmed_cases"];
+  let newCases = "+" + data[0]["new_confirmed_cases"] + " new cases ";
   console.log(newCases);
-  document.getElementById("new-cases").innerHTML =
-    "+" + newCases + " new cases";
-  const newDeaths = data[0]["new_deaths"];
+  document.getElementById("new-cases").innerHTML = newCases;
+  let newDeaths = "+" + data[0]["new_deaths"] + " new deaths";
   console.log(newDeaths);
-  document.getElementById("new-deaths").innerHTML =
-    "+" + newDeaths + " new deaths";
-  let newElement = document.createElement("div");
-  console.log(newElement);
+  document.getElementById("new-deaths").innerHTML = newDeaths;
 });
 
-console.log(deaths + "this is deaths again");
+const vaccineUrl =
+  "https://raw.githubusercontent.com/datadesk/california-coronavirus-data/master/cdph-vaccination-state-totals.csv";
+
+fetchData(vaccineUrl).then((text) => {
+  const data = d3.csvParse(text);
+  console.log(data);
+  let dosesAdministered = data[0]["doses_administered"];
+  console.log(dosesAdministered);
+  document.getElementById("doses-administered").innerHTML = dosesAdministered;
+  let newDosesAdministered = [0]["new_doses_administered"];
+  console.log(newDosesAdministered);
+});

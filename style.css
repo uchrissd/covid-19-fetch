@@ -65,10 +65,21 @@ h1 {
   font-weight: 500;
 }
 
-.list-style {
+.confirmed-list-style {
   list-style-type: none;
   color: #026f90;
 }
+
+.deaths-list-style {
+  list-style-type: none;
+  color: #3c4753;
+}
+
+.vaccines-list-style{
+  list-style-type: none;
+  color: #65772c
+}
+
 
 .small-number {
   font-weight: 700;
