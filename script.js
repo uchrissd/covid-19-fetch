@@ -47,3 +47,7 @@ fetchData(vaccineUrl).then((text) => {
   let newDosesAdministered = [0]["new_doses_administered"];
   console.log(newDosesAdministered);
 });
+
+let date = moment().format("MMMM Do YYYY, h:mm:ss a");
+document.getElementById("date").innerHTML = date;
+console.log(date);
