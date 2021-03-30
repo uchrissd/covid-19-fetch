@@ -11,10 +11,10 @@
     <title>Hello!</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav class="masthead"></nav>
@@ -22,9 +22,29 @@
       <h1>Tracking COVID-19 In California</h1>
     </header>
     <section class="big-numbers triptych">
-      <div class="box confirmed">Numbers here</div>
-      <div class="box">Numbers here</div>
-      <div class="box">Numbers here</div>
+      <div class="box-confirmed">
+        <ul class="box list-style">
+          <li>
+            <span id="confirmed-cases" class="big-number" ;></span>
+            <p class="big-number-label">confirmed cases</p>
+          </li>
+          <li>
+            <span id="new-cases" class="small-number"></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box-death">
+        <ul class="box list-style">
+          <li>
+            <span id="deaths" class="big-number" ;></span>
+            <p class="big-number-label">deaths</p>
+          </li>
+          <li>
+            <span id="new-deaths" class="small-number"></span>
+          </li>
+        </ul>
+      </div>
     </section>
     <div>
       <div class="graphic-container">

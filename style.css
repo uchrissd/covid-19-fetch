@@ -1,5 +1,4 @@
 /* CSS files add styling rules to your content */
-
 body {
   min-height: 100%;
   position: relative;
@@ -46,7 +45,33 @@ h1 {
   display: flex;
   background-color: none;
   border-radius: 10px;
+  text-align: center;
+  font-family: "Benton Gothic", Arial, sans-serif;
 }
+
+.big-number {
+  line-height: 45px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin: 0 0 5px;
+  font-size: 2.625rem;
+}
+
+.big-number-label {
+  font-size: .9375rem;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.list-style {
+  list-style-type: none;
+  color: #026f90;
+}
+
+.small-number {
+  font-weight: 700;
 
 .triptych {
   max-width: 800px;
@@ -56,8 +81,4 @@ h1 {
 .graphic-section--chart {
   max-width: 630px;
   margin: 0 auto;
-}
-
-.confirmed {
-  color: #026f90;
 }
