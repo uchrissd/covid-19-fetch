@@ -32,6 +32,8 @@ fetchData(csvUrl).then((text) => {
     "+" + newCases + " new cases";
   const newDeaths = data[0]["new_deaths"];
   console.log(newDeaths);
+  document.getElementById("new-deaths").innerHTML =
+    "+" + newDeaths + " new deaths";
   let newElement = document.createElement("div");
   console.log(newElement);
 });
