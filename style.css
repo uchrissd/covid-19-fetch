@@ -23,6 +23,28 @@ h1 {
   margin-right: auto;
 }
 
+p {
+  display: block;
+}
+
+.graphic-container {
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.bulletList {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid #31799e;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  line-height: 1.55;
+}
+
+.bullet_list {
+  margin-top: 30px;
+}
+
 .masthead {
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
@@ -36,7 +58,7 @@ h1 {
   text-align: center;
   font-size: 12px;
   display: block;
-  font-family: "Benton Gothic",Arial,sans-serif;
+  font-family: "Benton Gothic", Arial, sans-serif;
   margin: 0 0 2px;
   line-height: 1.5;
   font-weight: 700;
@@ -46,7 +68,7 @@ h1 {
 .dateline {
   text-align: center;
   color: #666;
-  font-family: "Benton Gothic",Arial,sans-serif;
+  font-family: "Benton Gothic", Arial, sans-serif;
   margin: 0 0 2px;
   line-height: 1.5;
   font-size: 14px;
@@ -58,6 +80,7 @@ h1 {
   padding: 20px 2px;
   background: #f7f5f5;
   border-radius: 10px;
+  display: flex;
 }
 
 .big-numbers {
@@ -74,13 +97,13 @@ h1 {
   line-height: 45px;
   font-weight: 700;
   text-align: center;
-  display: block;
+  display: grid;
   margin: 0 0 5px;
   font-size: 2.625rem;
 }
 
 .big-number-label {
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   line-height: 15px;
   text-align: center;
   font-weight: 500;
@@ -89,28 +112,28 @@ h1 {
 .confirmed-list-style {
   list-style-type: none;
   color: #026f90;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .deaths-list-style {
   list-style-type: none;
   color: #3c4753;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.vaccines-list-style{
+.vaccines-list-style {
   list-style-type: none;
-  color: #65772c
+  color: #65772c;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 .small-number {
   font-weight: 700;
-
-.triptych {
-  max-width: 800px;
 }
 
-.graphic-container,
-.graphic-section--chart {
-  max-width: 630px;
-  margin: 0 auto;
+.big-numbers.triptych {
+  max-width: 800px;
 }
