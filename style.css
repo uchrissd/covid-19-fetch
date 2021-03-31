@@ -84,7 +84,7 @@ p {
 }
 
 .big-numbers {
-  max-width: 630px;
+  max-width: 730px;
   margin: 30px auto;
   display: flex;
   background-color: none;
@@ -136,4 +136,10 @@ p {
 
 .big-numbers.triptych {
   max-width: 800px;
+}
+
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
