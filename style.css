@@ -77,7 +77,6 @@ p {
 
 .box {
   margin: 0 auto;
-  padding: 20px 2px;
   background: #f7f5f5;
   border-radius: 10px;
   display: flex;
@@ -112,21 +111,21 @@ p {
 .confirmed-list-style {
   list-style-type: none;
   color: #026f90;
-  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
 .deaths-list-style {
   list-style-type: none;
   color: #3c4753;
-  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
 .vaccines-list-style {
   list-style-type: none;
   color: #65772c;
-  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
